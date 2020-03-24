@@ -3,5 +3,5 @@
   # Websites  
   >[DMOJ](https://dmoj.ca/) & [USACO](http://www.usaco.org/index.php?page=contests).  
   # Usernames
-  >[DMOJ: itslinotlie)](https://dmoj.ca/user/itslinotlie) & [Codeforces: itslinotlie)](https://codeforces.com/profile/itslinotlie)
+  >[DMOJ: itslinotlie](https://dmoj.ca/user/itslinotlie) & [Codeforces: itslinotlie](https://codeforces.com/profile/itslinotlie)
   
