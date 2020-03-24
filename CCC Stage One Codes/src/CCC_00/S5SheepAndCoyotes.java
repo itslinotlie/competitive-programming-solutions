@@ -1,4 +1,5 @@
 // 01/22/2020
+//https://dmoj.ca/problem/ccc00s5
 package CCC_00;
 
 import java.util.*;
@@ -7,22 +8,16 @@ import java.io.*;
 public class S5SheepAndCoyotes {
     public static void main (String[] args) {
         Scanner in = new Scanner(System.in);
-        //Point eaten[] = new Point[100]; 
         ArrayList<Double> listX = new ArrayList<>();
         ArrayList<Double> listY = new ArrayList<>();
         
         int n = in.nextInt();
         Point sheep[] = new Point[n];
-        for (int i=0;i<n;i++) {
-            sheep[i] = new Point(in.nextDouble(), in.nextDouble());
-        }
-        
+        for (int i=0;i<n;i++) sheep[i] = new Point(in.nextDouble(), in.nextDouble());
         
         for (double i=0;i<=1001;i+=0.01) {
-            double diff1 = Double.MAX_VALUE;
+            double arr[] = new double[n], diff1 = Double.MAX_VALUE;
             int index = 0;
-           
-            double arr[] = new double[n];
             for (int j=0;j<n;j++) {
                 double temp = findDifference(sheep[j], i);
                 arr[j] = temp;
@@ -35,29 +30,10 @@ public class S5SheepAndCoyotes {
                 listX.add(sheep[index].x);
                 listY.add(sheep[index].y);
             }
-//
-//            
-//                if (temp <= diff1 && (!listX.contains(sheep[j].x) || !listY.contains(sheep[j].y)) ) {
-//                    diff1 = temp;
-////                    listX.clear(); listY.clear();
-//                    listX.add(sheep[j].x);
-//                    listY.add(sheep[j].y);
-//                }
-//                else if (temp == diff) {
-//                    listX.add(sheep[j].x);
-//                    listY.add(sheep[j].y);                
-//                }                
-            //}
         }
-//        System.out.println(listX.size());
-        Iterator itrX = listX.iterator();
-        Iterator itrY = listY.iterator();
+        Iterator itrX = listX.iterator(), itrY = listY.iterator();
         while (itrX.hasNext()) { //The sheep at (100.00, 100.00) might be eaten.
-            System.out.print("The sheep at (");
-            System.out.printf("%.2f", itrX.next());
-            System.out.print(", ");
-            System.out.printf("%.2f", itrY.next());
-            System.out.println(") might be eaten.");
+            System.out.printf("The sheep at (%.2f, %.2f) might be eaten.\n", itrX.next(), itrY.next());
         }
     }
     static double findDifference(Point p, double cur) {
