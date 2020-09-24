@@ -13,6 +13,6 @@ public class C4P0Yikes {
         for (int i=0;i<a.length();i++) {
             if (!(a.charAt(i)==b.charAt(i))) count++;
         }
-        System.out.println(count==1? "LARRY IS SAVED!":"LARRY IS DEAD!")
+        System.out.println(count==1? "LARRY IS SAVED!":"LARRY IS DEAD!");
     }
 }
