@@ -1,4 +1,5 @@
 // 10/17/2020
+// https://codeforces.com/contest/1428/problem/A
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
