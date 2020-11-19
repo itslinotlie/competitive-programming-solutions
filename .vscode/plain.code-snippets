@@ -1,0 +1,16 @@
+{ //absolute bare minimum
+	"C++ Template": {
+        "prefix": "plain",
+        "body": [
+            "// $CURRENT_MONTH/$CURRENT_DATE/$CURRENT_YEAR",
+            "#include<bits/stdc++.h>",
+            "using namespace std;",
+            "",
+            "int main() {",
+			"    ios::sync_with_stdio(0); cin.tie(0);",
+			"    $0",
+            "}"
+        ],
+        "description": "",
+    }
+}

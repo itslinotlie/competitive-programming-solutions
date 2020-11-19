@@ -1,0 +1,27 @@
+{
+	"C++ Template": {
+        "prefix": "orz",
+        "body": [
+            "// $CURRENT_MONTH/$CURRENT_DATE/$CURRENT_YEAR",
+            "#include<bits/stdc++.h>",
+            "using namespace std;",
+            "typedef long long ll;",
+            "typedef pair<int, int> pii;",
+            "#define F first",
+            "#define S second",
+            "",
+            "void work() {",
+            "    $0",
+            "}",
+            "int main() {",
+            "    ios::sync_with_stdio(0); cin.tie(0);",
+            "    int T; cin >> T;",
+            "    for(int t=1;t<=T;t++) {",
+            "        cout << \"Case #\" << t << \": \";",
+            "        work();",
+            "    }",
+            "}"
+        ],
+        "description": "GOOGLE POP OFF",
+    }
+}

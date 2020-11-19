@@ -1,0 +1,15 @@
+{ //disjoint set tempalte
+	"C++ Template": {
+        "prefix": "disjoint",
+        "body": [
+			"int find(int x) {",
+			"    return p[x]==x? p[x]:p[x]=find(p[x]);",
+			"}",
+			"void unite(int x, int y) {",
+			"    x = find(x); y = find(y);",
+			"    if(x!=y) p[x] = y;",
+			"}"
+        ],
+        "description": "",
+    }
+}

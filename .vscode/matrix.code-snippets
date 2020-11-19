@@ -1,0 +1,28 @@
+{ //matrix template
+	"C++ Template": {
+		"prefix": "mtrx",
+		"body": [
+		"struct Matrix {",
+		"    vector<vector<ll>> a = vector<vector<ll>>(n, vector<ll>(n));",
+		"    Matrix operator*(const Matrix &other) {",
+		"        Matrix product;",
+		"        REP(i, n) REP(j, n) REP(k, n) {",
+		"            product.a[i][k] = (product.a[i][k] + (ll)a[i][j]*other.a[j][k])%mod;",
+		"        }",
+		"        return product;",
+		"    }",
+		"};",
+		"Matrix binpow(Matrix a, ll k) {",
+		"    Matrix product;",
+		"    REP(i, n) product.a[i][i] = 1;",
+		"    while(k>0) {",
+		"        if(k%2) product = product * a;",
+		"        a = a * a;",
+		"        k/=2;",
+		"    }",
+		"    return product;",
+		"}"
+		],
+		"description": ""
+	}
+}
