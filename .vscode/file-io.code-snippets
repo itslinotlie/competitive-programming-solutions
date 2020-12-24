@@ -1,0 +1,10 @@
+{ //reading from file
+	"C++ Template": {
+        "prefix": "io",
+        "body": [
+			"freopen(\"moop.in\",\"r\",stdin);$1",
+			"freopen(\"moop.out\",\"w\",stdout);",
+        ],
+        "description": "",
+    }
+}
