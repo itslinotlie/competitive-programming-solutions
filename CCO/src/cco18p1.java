@@ -1,6 +1,5 @@
 // 03/26/2020
 // https://dmoj.ca/problem/cco18p1
-package CCO_18;
 
 import java.util.*;
 import java.io.*;
