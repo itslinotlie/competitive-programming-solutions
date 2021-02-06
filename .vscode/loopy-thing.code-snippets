@@ -13,7 +13,7 @@
 		  "#define all(c) (c).begin(), (c).end()",
 		  "#define F first",
 		  "#define S second",
-		  "",
+		  "$3",
 		  "",
 		  "int t(1)$2;",
 		  "void solve() {",
