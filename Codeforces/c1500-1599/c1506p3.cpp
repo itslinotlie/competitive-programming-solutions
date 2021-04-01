@@ -1,4 +1,5 @@
 // 03/29/2021
+// https://codeforces.com/contest/1506/problem/C
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -19,9 +20,7 @@ void solve() {
     for(int i=n;i>=1 && flag;i--) { //length of string comparison
         for(int j=0;j<=n-i && flag;j++) {
             for(int k=0;k<=m-i;k++) {
-                // cout << i <<  " | " << a.substr(j, i) << " " << b.substr(k, i) << "\n";
                 if(a.substr(j, i)==b.substr(k, i)) {
-                    // cout << a.substr(j, n) << " | " << b.substr(k, n) << "\n";
                     ans = min(ans, n-i+m-i);
                     flag = false;
                     break;

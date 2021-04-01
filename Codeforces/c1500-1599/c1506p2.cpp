@@ -1,4 +1,5 @@
 // 03/29/2021
+// https://codeforces.com/contest/1506/problem/B
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -15,7 +16,6 @@ int t(1), n, k, ans, i; string s;
 void calc(int idx) {
     ans++;
     if(idx+k>=n) return;
-    // ans++;
     for(i=idx+k;i>idx;i--) {
         if(s[i]=='*') {calc(i); return;}
     }
