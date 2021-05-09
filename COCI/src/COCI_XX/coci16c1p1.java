@@ -1,6 +1,6 @@
 // 10/30/19
 // https://dmoj.ca/problem/coci16c1p1
-package COCI_16;
+package COCI_XX;
 
 import java.util.*;
 public class C1P1Tarifa {

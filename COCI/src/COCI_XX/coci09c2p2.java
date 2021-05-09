@@ -1,6 +1,6 @@
 // 05/16/2020
 // https://dmoj.ca/problem/coci17c2p2
-package COCI_17;
+package COCI_XX;
 
 import java.util.*;
 import java.io.*;

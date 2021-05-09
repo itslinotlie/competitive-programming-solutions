@@ -1,6 +1,6 @@
 // 11/16/2019
 // https://dmoj.ca/problem/coci09c1p1
-package COCI_09;
+package COCI_XX;
 
 import java.util.*;
 import java.io.*;

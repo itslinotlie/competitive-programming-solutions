@@ -1,6 +1,6 @@
 // 11/09/19
 // https://dmoj.ca/problem/coci09c1p2
-package COCI_09;
+package COCI_XX;
 
 import java.util.*;
 public class C1P2Domino {
