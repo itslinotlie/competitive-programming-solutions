@@ -1,0 +1,47 @@
+//this doesn't actually affect the keybindings, just the commands I need when I switch computers 
+[
+    {
+        "key": "alt+q",
+        "command": "cursorLineStart"
+    },
+    {
+        "key": "alt+e",
+        "command": "cursorLineEnd"
+    },
+    {
+        "key": "alt+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+t",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+f1",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "alt+f2",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+alt+R",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "g++ -std=c++17 '${fileBasename}' && ./a"
+        }
+    },
+    {
+        "key": "ctrl+alt+A",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": "git add '${file}'"
+        }
+    },
+    {
+        "key": "ctrl+alt+d",
+        "command": "workbench.action.terminal.kill"
+    },
+]
