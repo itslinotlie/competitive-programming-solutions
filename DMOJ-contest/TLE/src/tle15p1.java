@@ -1,9 +1,8 @@
 // 02/17/20
 //https://dmoj.ca/problem/tle15p1
-package TLE_15;
 
 import java.util.*;
-public class C1P1PowerRankings {
+public class tle15p1 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
