@@ -1,0 +1,26 @@
+// 05/19/2021
+// https://codeforces.com/contest/278/problem/A
+#include<bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+typedef pair<int, int> pii;
+#define CLR(a) memset(a, 0, sizeof(a))
+#define REP(i, n) for(int i=0;i<n;i++)
+#define FOR(i, n) for(int i=1;i<=n;i++)
+#define F first
+#define S second
+inline ll gcd(ll a, ll b) {return b==0? a:gcd(b, a%b);}
+inline ll lcm(ll a, ll b) {return a*b/gcd(a, b);}
+const int mxn = 1e2+2;
+
+int n, a[mxn], s, t, x, y;
+int main() {
+    ios::sync_with_stdio(0); cin.tie(0);
+    cin >> n;
+    REP(i, n) cin >> a[i];
+    cin >> s >> t; s--; t--;
+    if(s>t) swap(s, t);
+    for(int i=s;i<t;i++) x+=a[i];
+    for(int i=0;i<s;i++) y+=a[i]; for(int i=t;i<n;i++) y+=a[i];
+    cout << min(x, y) << "\n";
+}
