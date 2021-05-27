@@ -1,23 +1,33 @@
-// 03/08/2020
-//https://dmoj.ca/problem/tle16c4p1
-package TLE_16;
+// 03/03/2020
+//https://dmoj.ca/problem/tle17c1p2
 
 import java.util.*;
 import java.io.*;
 
-public class C4P1StackOfPresents {
+public class tle17c1p2 {
     public static void main (String[] args) throws IOException{
-        int n = readInt(), arr[] = new int[n+1], psa[] = new int[n+1];
-        for (int i=1;i<=n;i++) arr[i] = readInt();
-        Arrays.sort(arr);
-        psa = Arrays.copyOf(arr, n+1);
-        for (int i=1;i<=n;i++) psa[i] += psa[i-1];
-        int cnt = 1, minus = 0;
-        for (int i=2;i<=n;i++) {
-            if (arr[i] < psa[i-1] - minus) minus+=arr[i];
-            else cnt ++;
+        int n = readInt();
+        Map<String, Integer> map = new HashMap();
+        for (int i=0;i<n;i++) map.put(read(), readInt());
+        int k = readInt();
+        List<Item> a = new ArrayList();
+        for (int i=0;i<k;i++) {
+            String food = read(); int pos = readInt();
+            a.add(new Item(pos, map.get(food)));
         }
-        System.out.println(cnt);
+        Collections.sort(a);
+        int count = 0, energy = 0, location = 0;
+        for (Item nxt : a) {
+            if (nxt.pos - location > Math.max(energy, 0)) break;
+            energy += (nxt.val - (nxt.pos-location));
+            count++; location = nxt.pos;
+        }
+        System.out.println(count);       
+    }
+    static class Item implements Comparable<Item>{
+        int pos, val;
+        Item (int p, int v) {pos = p; val = v;}
+        public int compareTo(Item x) {return Integer.compare(pos, x.pos);}
     }
     final private static int BUFFER_SIZE = 1 << 16;
     private static DataInputStream din = new DataInputStream(System.in);

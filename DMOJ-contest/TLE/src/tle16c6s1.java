@@ -1,11 +1,10 @@
 // 02/17/2020
 //https://dmoj.ca/problem/tle16c6s1
-package TLE_16;
 
 import java.util.*;
 import java.io.*;
 
-public class C6S1WritingTheCCC {
+public class tle16c6s1 {
     public static void main (String[] args) throws IOException{
         int n = readInt(); Order order[] = new Order[n]; 
         LinkedList list[] = new LinkedList[n];

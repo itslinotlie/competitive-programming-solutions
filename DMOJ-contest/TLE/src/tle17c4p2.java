@@ -1,11 +1,10 @@
 // 03/15/2020
 //https://dmoj.ca/problem/tle17c4p2
-package TLE_17;
 
 import java.util.*;
 import java.io.*;
 
-public class C4P2MicrowaveButtons {
+public class tle17c4p2 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static PrintWriter pr = new PrintWriter(new BufferedWriter(new OutputStreamWriter(System.out)));
     static StringTokenizer st;
